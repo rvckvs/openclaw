@@ -1,0 +1,35 @@
+{
+  "name": "@openclaw/gemini-cli-oauth",
+  "version": "2026.1.30",
+  "description": "Standalone Gemini CLI OAuth module - reusable authentication logic",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "gemini",
+    "oauth",
+    "google",
+    "cli",
+    "authentication"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

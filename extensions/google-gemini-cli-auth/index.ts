@@ -1,5 +1,5 @@
 import { emptyPluginConfigSchema } from "openclaw/plugin-sdk";
-import { loginGeminiCliOAuth } from "./oauth.js";
+import { loginGeminiCliOAuth } from "@openclaw/gemini-cli-oauth";
 
 const PROVIDER_ID = "google-gemini-cli";
 const PROVIDER_LABEL = "Gemini CLI OAuth";

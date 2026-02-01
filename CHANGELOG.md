@@ -19,6 +19,15 @@ Docs: https://docs.openclaw.ai
 
 ## 2026.1.30
 
+### Features
+
+- **Gemini CLI OAuth**: Extracted Gemini CLI OAuth logic into a standalone, reusable package `@openclaw/gemini-cli-oauth` that can be used in any Node.js project. The package provides full OAuth 2.0 PKCE flow, automatic credential extraction from installed Gemini CLI, and comprehensive TypeScript types.
+  - New standalone package at `packages/gemini-cli-oauth`
+  - Auto-detection of Gemini CLI credentials
+  - Support for both local and remote/VPS environments
+  - Comprehensive API documentation and examples
+  - Full test coverage
+
 ### Changes
 
 - CLI: add `completion` command (Zsh/Bash/PowerShell/Fish) and auto-setup during postinstall/onboarding.
