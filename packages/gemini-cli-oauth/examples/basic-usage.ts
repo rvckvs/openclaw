@@ -50,7 +50,9 @@ async function performLogin() {
       progress: {
         update: (msg: string) => console.log(`[Progress] ${msg}`),
         stop: (msg?: string) => {
-          if (msg) console.log(`[Done] ${msg}`);
+          if (msg) {
+            console.log(`[Done] ${msg}`);
+          }
         },
       },
     });
@@ -74,6 +76,9 @@ async function performLogin() {
 
 // Uncomment to run the login flow:
 // performLogin().catch(() => process.exit(1));
+
+// Prevent unused function warning - this is an example file
+void performLogin;
 
 // For now, just show what would happen:
 console.log("To run the login flow, uncomment the performLogin() call at the end of this file.");
