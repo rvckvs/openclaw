@@ -2,6 +2,8 @@
 
 OAuth provider plugin for **Gemini CLI** (Google Code Assist).
 
+This plugin integrates the standalone [@openclaw/gemini-cli-oauth](../../packages/gemini-cli-oauth) package into OpenClaw.
+
 ## Enable
 
 Bundled plugins are disabled by default. Enable this one:
@@ -33,3 +35,13 @@ Override auto-detected credentials with:
 
 - `OPENCLAW_GEMINI_OAUTH_CLIENT_ID` / `GEMINI_CLI_OAUTH_CLIENT_ID`
 - `OPENCLAW_GEMINI_OAUTH_CLIENT_SECRET` / `GEMINI_CLI_OAUTH_CLIENT_SECRET`
+
+## Using the Standalone Package
+
+The OAuth logic is available as a standalone package that can be used in any Node.js project:
+
+```bash
+npm install @openclaw/gemini-cli-oauth
+```
+
+See the [@openclaw/gemini-cli-oauth package](../../packages/gemini-cli-oauth) for more details on using it independently.
